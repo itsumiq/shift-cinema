@@ -15,7 +15,7 @@ const config: Config = {
           brand: "#9534D2",
         },
         text: {
-          primary: "#344051",
+          primary: "#141C24",
           tertiary: "##637083",
         },
         indicator: {
