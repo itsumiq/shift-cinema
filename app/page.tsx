@@ -1,5 +1,9 @@
-import Image from "next/image";
+import { CardList } from "@/src/widgets/CardList";
 
 export default function Home() {
-  return <div></div>;
+  return (
+    <div>
+      <CardList />
+    </div>
+  );
 }

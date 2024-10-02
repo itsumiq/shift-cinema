@@ -16,13 +16,16 @@ const config: Config = {
         },
         text: {
           primary: "#141C24",
-          tertiary: "##637083",
+          tertiary: "#637083",
         },
         indicator: {
           light: "#CED2DA",
           attention: "#FFB219",
           medium: "#97A1AF",
         },
+      },
+      fontSize: {
+        sm: ["0.875rem", "0.875rem"],
       },
     },
   },

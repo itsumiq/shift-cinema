@@ -6,4 +6,13 @@
   h2 {
     @apply text-2xl text-text-primary font-bold;
   }
+  h3 {
+    @apply text-xl font-semibold text-text-primary;
+  }
+}
+
+@layer components {
+  .text-1 {
+    @apply text-sm text-text-primary;
+  }
 }
