@@ -1,4 +1,4 @@
-import { HeaderMobile } from "@/src/widgets/headers";
+import { Header } from "@/src/widgets/header";
 
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en" className="h-full">
       <body className={`${inter.className} h-full antialiased`}>
         <div className="mx-auto flex h-full w-[20.5rem] flex-col">
-          <HeaderMobile />
+          <Header />
           {children}
         </div>
       </body>
