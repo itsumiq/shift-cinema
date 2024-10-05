@@ -6,20 +6,24 @@ import Link from "next/link";
 
 export const Header = () => {
   return (
-    <header className="flex items-center justify-between py-6">
-      <div className="flex gap-x-4">
-        <Logo />
+    <header className="grid grid-cols-[1fr_auto] items-center gap-x-4 py-3">
+      <div className="flex justify-between">
+        <Link href="/" className="flex items-center">
+          <Logo />
+        </Link>
 
         <ul className="flex gap-x-4">
           <li>
-            <Link href="" className="flex flex-col items-center">
+            <Link href="/profile" className="flex flex-col items-center">
               <User />
               <p className="text-xs font-medium text-text-secondary">Профиль</p>
             </Link>
           </li>
-          <li className="flex flex-col items-center">
-            <Ticket />
-            <p className="text-xs font-medium text-text-secondary">Билеты</p>
+          <li>
+            <Link href="/tickets" className="flex flex-col items-center">
+              <Ticket />
+              <p className="text-xs font-medium text-text-secondary">Билеты</p>
+            </Link>
           </li>
         </ul>
       </div>

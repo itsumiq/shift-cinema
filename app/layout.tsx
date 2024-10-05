@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full">
       <body className={`${inter.className} h-full antialiased`}>
-        <div className="mx-auto flex h-full w-[20.5rem] flex-col">
+        <div className="mx-auto flex h-full w-[20.5rem] flex-col gap-y-6">
           <Header />
           {children}
         </div>
