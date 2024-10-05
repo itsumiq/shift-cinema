@@ -3,7 +3,7 @@ export interface FilmsListProps {
   films: FilmProps[];
 }
 
-interface FilmProps {
+export interface FilmProps {
   id: string;
   name: string;
   originalName: string;

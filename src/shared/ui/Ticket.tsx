@@ -6,7 +6,7 @@ export const Ticket = () => {
       viewBox="0 0 25 25"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="size-6"
+      className="size-6 text-indicator-normal"
     >
       <path
         d="M12.5 17.6118C13.0523 17.6118 13.5 17.1641 13.5 16.6118C13.5 16.0595 13.0523 15.6118 12.5 15.6118C11.9477 15.6118 11.5 16.0595 11.5 16.6118C11.5 17.1641 11.9477 17.6118 12.5 17.6118Z"
