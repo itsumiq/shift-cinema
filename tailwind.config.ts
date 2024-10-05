@@ -23,6 +23,7 @@ const config: Config = {
           light: "#CED2DA",
           attention: "#FFB219",
           medium: "#97A1AF",
+          normal: "#141C24",
         },
       },
       fontSize: {
