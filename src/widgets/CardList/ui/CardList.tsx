@@ -1,8 +1,7 @@
 "use server";
 
 import { CardCinema } from "@/src/entities/CardCinema";
-import { Rating } from "@/src/entities/rating";
-import { Button } from "@/src/shared/ui";
+import { ButtonLink } from "@/src/features/buttonLink";
 
 import { api } from "@/src/shared/api";
 import { FilmsListProps } from "@/src/shared/types";
@@ -22,12 +21,10 @@ export const CardList = async () => {
             title={name}
             subtitle={description}
             userRating={userRatings.kinopoisk}
-          >
-            <Rating userRating={userRatings.kinopoisk} />
-          </CardCinema>
-          <Button variant="default" size="default">
+          />
+          <ButtonLink variant="default" size="default" link={`/aboutFilm/${id}`}>
             Подробнее
-          </Button>
+          </ButtonLink>
         </li>
       ))}
     </ul>

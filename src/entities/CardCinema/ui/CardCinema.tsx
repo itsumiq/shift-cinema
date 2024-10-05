@@ -1,3 +1,4 @@
+import { Rating } from "../../rating";
 import Image from "next/image";
 
 import { getReleaseYear } from "../lib/getReleaseYear";
@@ -10,7 +11,6 @@ interface CardCinemaProps {
   title: string;
   subtitle: string;
   userRating: string;
-  children: React.ReactNode;
 }
 
 export const CardCinema = ({
@@ -21,7 +21,6 @@ export const CardCinema = ({
   title,
   subtitle,
   userRating,
-  children,
 }: CardCinemaProps) => {
   const year = getReleaseYear(releaseDate);
   const cinemaInformation = `${country}, ${year}`;
@@ -34,7 +33,7 @@ export const CardCinema = ({
           width={606}
           height={903}
           alt="film image"
-          className="h-[300px] w-[328px]"
+          className="h-[300px] w-[328px] rounded-lg"
           priority={true}
         />
         <div className="absolute bottom-0 right-0 flex h-12 w-[6.875rem] flex-col gap-y-1 rounded-tl-lg bg-bg-secondary py-2">
@@ -54,7 +53,7 @@ export const CardCinema = ({
         </div>
 
         <div>
-          {children}
+          <Rating userRating={userRating} />
           <p className="text-1 mt-1 text-text-tertiary">Kinopoisk - {userRating}</p>
         </div>
       </div>
