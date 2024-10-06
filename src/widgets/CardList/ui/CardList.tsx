@@ -3,11 +3,11 @@
 import { CardCinema } from "@/src/entities/CardCinema";
 import { ButtonLink } from "@/src/features/buttonLink";
 
-import { api } from "@/src/shared/api";
+import { cinemaApi } from "@/src/shared/api";
 import { FilmsListProps } from "@/src/shared/types";
 
 export const CardList = async () => {
-  const films = (await api<FilmsListProps>("cinema/today")).films;
+  const films = (await cinemaApi<FilmsListProps>("today")).films;
 
   return (
     <ul className="flex flex-col gap-y-6">

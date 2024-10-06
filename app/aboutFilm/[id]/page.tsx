@@ -3,7 +3,7 @@
 import { CardCinema } from "@/src/entities/CardCinema";
 import { FilmDescription } from "@/src/entities/filmDescription";
 
-import { api } from "@/src/shared/api";
+import { cinemaApi } from "@/src/shared/api";
 import { FilmProps } from "@/src/shared/types";
 import { ButtonBack } from "@/src/features/buttonBack";
 import { ChevronLeft } from "lucide-react";
@@ -14,7 +14,7 @@ interface AboutFilm {
 
 const AboutFilm = async ({ params }: AboutFilm) => {
   const { country, description, genres, id, img, name, originalName, releaseDate, userRatings } = (
-    await api<{ film: FilmProps }>(`cinema/film/${params.id}`)
+    await cinemaApi<{ film: FilmProps }>(`film/${params.id}`)
   ).film;
 
   return (
