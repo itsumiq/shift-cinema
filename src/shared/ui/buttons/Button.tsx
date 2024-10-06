@@ -9,6 +9,7 @@ const buttonVariants = cva("rounded-lg", {
     size: {
       default: "h-[3.5rem] w-full text-base font-semibold",
       ghost: "text-base font-semibold",
+      "ghost-2": "text-base font-normal",
     },
   },
   defaultVariants: {
