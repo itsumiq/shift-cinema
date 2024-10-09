@@ -20,9 +20,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full">
-      <body className={`${inter.className} h-full antialiased`}>
-        <div className="mx-auto flex h-full w-[20.5rem] flex-col gap-y-6">
+    <html lang="en" className="h-full overflow-x-hidden">
+      <body className={`${inter.className} h-full overflow-x-hidden antialiased`}>
+        <div className="grid h-full grid-rows-[auto_1fr] justify-items-center gap-y-6">
           <Header />
           {children}
         </div>

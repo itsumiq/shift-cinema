@@ -9,6 +9,9 @@
   h3 {
     @apply text-xl font-semibold text-text-primary;
   }
+  input {
+    @apply appearance-none;
+  }
 }
 
 @layer components {

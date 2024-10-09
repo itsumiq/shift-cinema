@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export const Header = () => {
   return (
-    <header className="grid grid-cols-[1fr_auto] items-center gap-x-4 py-3">
+    <header className="grid w-[20.5rem] grid-cols-[1fr_auto] items-center gap-x-4 py-3">
       <div className="flex justify-between">
         <Link href="/" className="flex items-center">
           <Logo />
