@@ -1,3 +1,5 @@
+// FILM DATE
+
 export interface FilmsListProps {
   success: boolean;
   films: FilmProps[];
@@ -25,4 +27,27 @@ interface CountryProps {
 interface UserRatingsProps {
   kinopoisk: string;
   imdb: string;
+}
+
+// FILM SCHEDULE
+
+export interface ScheduleProps {
+  success: boolean;
+  schedules: SchedulesProps[];
+}
+
+export interface SchedulesProps {
+  date: string;
+  seances: SeancesProps;
+}
+
+export interface SeancesProps {
+  time: string;
+  hall: { name: string; places: PlacesProps[] };
+  payedTickets: string[];
+}
+
+interface PlacesProps {
+  price: number;
+  type: string;
 }
