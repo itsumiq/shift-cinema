@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  h2 {
+    @apply font-bold text-[24px] text-text-primary;
+  }
+}
+
+@layer components {
+  .text-1 {
+    @apply text-[16px];
+  }
+}

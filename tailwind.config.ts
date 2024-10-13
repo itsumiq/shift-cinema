@@ -1,0 +1,28 @@
+import type { Config } from "tailwindcss";
+
+const config: Config = {
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        bg: {
+          primary: "#FFFFFF",
+        },
+        indicator: {
+          light: "#CED2DA",
+          normal: "#141C24",
+        },
+        text: {
+          primary: "#141C24",
+          secondary: "#344051",
+        },
+      },
+    },
+  },
+  plugins: [],
+};
+export default config;
