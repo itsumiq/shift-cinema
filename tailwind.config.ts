@@ -19,7 +19,11 @@ const config: Config = {
         text: {
           primary: "#141C24",
           secondary: "#344051",
+          tertiary: "#637083",
         },
+      },
+      screens: {
+        desktop: "1440px",
       },
     },
   },

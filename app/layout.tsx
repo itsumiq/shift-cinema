@@ -20,10 +20,12 @@ const RootLayout = ({
   children: React.ReactNode;
 }>) => {
   return (
-    <html lang="en" className="text-[16px] xl:text-[16px]">
-      <body className={`${inter.className} antialiased`}>
-        <Header />
-        {children}
+    <html lang="en" className="h-full text-[16px] xl:text-[16px]">
+      <body className={`${inter.className} h-full antialiased`}>
+        <div className="desktop:w-[66.667vw] mx-auto h-full w-[91.1112vw] lg:w-[62.5vw]">
+          <Header />
+          {children}
+        </div>
       </body>
     </html>
   );

@@ -7,10 +7,30 @@
   h2 {
     @apply font-bold text-[24px] text-text-primary;
   }
+
+  h3 {
+    @apply font-semibold text-[20px] text-text-primary;
+  }
 }
 
 @layer components {
+  /* text-1  */
+
   .text-1 {
     @apply text-[16px];
+  }
+
+  .text-1-secondary-medium {
+    @apply text-1  text-text-secondary font-medium;
+  }
+
+  /* text-2  */
+
+  .text-2 {
+    @apply text-[14px];
+  }
+
+  .text-2-tertiary {
+    @apply text-2 text-text-tertiary;
   }
 }
