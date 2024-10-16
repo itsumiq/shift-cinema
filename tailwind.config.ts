@@ -17,6 +17,9 @@ const config: Config = {
         indicator: {
           light: "#CED2DA",
           normal: "#141C24",
+          border: {
+            light: "#e4e4e4",
+          },
         },
         text: {
           primary: "#141C24",

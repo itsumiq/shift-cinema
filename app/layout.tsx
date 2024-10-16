@@ -1,4 +1,5 @@
 import { Header } from "@/src/widgets/headers";
+import { FooterMobile, FooterProvider } from "@/src/widgets/footers";
 
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -22,9 +23,12 @@ const RootLayout = ({
   return (
     <html lang="en" className="h-full text-[16px] xl:text-[16px]">
       <body className={`${inter.className} h-full antialiased`}>
-        <div className="desktop:w-[66.667vw] mx-auto h-full w-[91.1112vw] lg:w-[62.5vw]">
+        <div className="mx-auto h-full w-[91.1112vw] lg:w-[62.5vw] desktop:w-[66.667vw]">
           <Header />
           {children}
+          <FooterProvider>
+            <FooterMobile />
+          </FooterProvider>
         </div>
       </body>
     </html>

@@ -45,4 +45,14 @@
   .text-2-primary-regular {
     @apply text-2 text-text-primary;
   }
+
+  /* text-4 */
+
+  .text-4 {
+    @apply text-[10px];
+  }
+
+  .text-4-tertiary-regular {
+    @apply text-4 text-text-tertiary font-normal;
+  }
 }
