@@ -33,7 +33,7 @@ export const CardFilm = ({
   const rating = Math.floor(Number(userRating) / 2);
 
   return (
-    <div className="flex flex-col gap-y-4">
+    <div className="flex w-[328px] flex-col gap-y-4 lg:w-[300px]">
       <div className="relative h-[300px] w-full">
         <Image
           className="h-full w-full rounded-lg bg-slate-500"
@@ -64,7 +64,7 @@ export const CardFilm = ({
 
       <Link
         href={`/film/${id}`}
-        className="bg-bg-brand text-1-white-semi flex h-[56px] w-full items-center justify-center rounded-2xl"
+        className="text-1-white-semi flex h-[56px] w-full items-center justify-center rounded-2xl bg-bg-brand"
       >
         Подробнее
       </Link>
