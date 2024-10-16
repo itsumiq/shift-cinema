@@ -24,13 +24,25 @@
     @apply text-1  text-text-secondary font-medium;
   }
 
+  .text-1-white-semi {
+    @apply text-1 font-semibold text-white;
+  }
+
   /* text-2  */
 
   .text-2 {
     @apply text-[14px];
   }
 
-  .text-2-tertiary {
+  .text-2-tertiary-regular {
     @apply text-2 text-text-tertiary;
+  }
+
+  .text-2-primary-medium {
+    @apply text-2 font-medium text-text-primary;
+  }
+
+  .text-2-primary-regular {
+    @apply text-2 text-text-primary;
   }
 }

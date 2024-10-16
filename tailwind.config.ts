@@ -11,6 +11,8 @@ const config: Config = {
       colors: {
         bg: {
           primary: "#FFFFFF",
+          secondary: "#F5F5F8",
+          brand: "#9534d2",
         },
         indicator: {
           light: "#CED2DA",
