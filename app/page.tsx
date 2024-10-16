@@ -1,7 +1,11 @@
-import Image from "next/image";
+import { CardList } from "@/src/widgets/cardList";
 
-const Home = () => {
-  return <div></div>;
+const Home = (): JSX.Element => {
+  return (
+    <>
+      <CardList />
+    </>
+  );
 };
 
 export default Home;
