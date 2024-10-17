@@ -25,6 +25,7 @@ export const CardList = async (): Promise<JSX.Element> => {
               genre={genres[0]}
               country={country.name}
               releaseData={releaseDate}
+              key={id}
               ageRatingLetter={ageRating}
               imgSrc={img}
               userRating={userRatings.kinopoisk}

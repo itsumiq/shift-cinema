@@ -21,9 +21,9 @@ const RootLayout = ({
   children: React.ReactNode;
 }>) => {
   return (
-    <html lang="en" className="h-full text-[16px] xl:text-[16px]">
-      <body className={`${inter.className} h-full antialiased`}>
-        <div className="mx-auto h-full w-[91.1112vw] lg:w-[62.5vw] desktop:w-[66.667vw]">
+    <html lang="en" className="block overflow-auto text-[16px] xl:text-[16px]">
+      <body className={`${inter.className} antialiased`}>
+        <div className="mx-auto w-[91.1112vw] lg:w-[62.5vw] desktop:w-[66.667vw]">
           <Header />
           {children}
           <FooterMobile />
