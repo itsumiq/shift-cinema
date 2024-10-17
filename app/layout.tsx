@@ -1,5 +1,5 @@
 import { Header } from "@/src/widgets/headers";
-import { FooterMobile, FooterProvider } from "@/src/widgets/footers";
+import { FooterMobile } from "@/src/widgets/footers";
 
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -26,9 +26,7 @@ const RootLayout = ({
         <div className="mx-auto h-full w-[91.1112vw] lg:w-[62.5vw] desktop:w-[66.667vw]">
           <Header />
           {children}
-          <FooterProvider>
-            <FooterMobile />
-          </FooterProvider>
+          <FooterMobile />
         </div>
       </body>
     </html>
