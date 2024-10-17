@@ -14,23 +14,24 @@ export const CardList = async (): Promise<JSX.Element> => {
   }
 
   return (
-    <div className="grid grid-cols-[repeat(auto-fill,minmax(328px,auto))] gap-y-6 max-md:justify-items-center md:justify-between lg:grid-cols-[repeat(auto-fill,minmax(300px,auto))]">
+    <ul className="grid grid-cols-[repeat(auto-fill,minmax(328px,auto))] gap-y-6 max-md:justify-items-center md:justify-between lg:grid-cols-[repeat(auto-fill,minmax(300px,auto))]">
       {cinemaToday.map(
         ({ id, name, originalName, genres, country, releaseDate, ageRating, img, userRatings }) => (
-          <CardFilm
-            id={id}
-            title={name}
-            subtitle={originalName}
-            genre={genres[0]}
-            country={country.name}
-            releaseData={releaseDate}
-            key={id}
-            ageRatingLetter={ageRating}
-            imgSrc={img}
-            userRating={userRatings.kinopoisk}
-          />
+          <li key={id}>
+            <CardFilm
+              id={id}
+              title={name}
+              subtitle={originalName}
+              genre={genres[0]}
+              country={country.name}
+              releaseData={releaseDate}
+              ageRatingLetter={ageRating}
+              imgSrc={img}
+              userRating={userRatings.kinopoisk}
+            />
+          </li>
         )
       )}
-    </div>
+    </ul>
   );
 };

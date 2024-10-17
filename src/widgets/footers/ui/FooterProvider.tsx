@@ -21,6 +21,10 @@ export const FooterProvider = ({ children }: FooterProviderProps): JSX.Element =
 
   useEffect(() => {
     window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   return <>{showFooter && children}</>;
