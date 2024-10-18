@@ -5,17 +5,10 @@ import { Rating } from "@/src/shared/ui";
 
 import { formattingFilmInfo } from "../lib/formattingFilmInfo";
 import { formattingAgeRating } from "../lib/formattingAgeRating";
+import { FilmProps } from "../types/types";
 
-interface CardFilmProps {
+interface CardFilmProps extends FilmProps {
   id: string;
-  title: string;
-  subtitle: string;
-  genre: string;
-  releaseData: string;
-  country: string;
-  ageRatingLetter: string;
-  imgSrc: string;
-  userRating: string;
 }
 
 export const CardFilm = ({
@@ -23,13 +16,13 @@ export const CardFilm = ({
   title,
   subtitle,
   genre,
-  releaseData,
+  releaseDate,
   country,
   ageRatingLetter,
   imgSrc,
   userRating,
 }: CardFilmProps): JSX.Element => {
-  const filmInfo = formattingFilmInfo(releaseData, country);
+  const filmInfo = formattingFilmInfo(releaseDate, country);
   const ageRating = formattingAgeRating(ageRatingLetter);
   const rating = Math.floor(Number(userRating) / 2);
 

@@ -1,6 +1,6 @@
 "use server";
 
-import { CardFilm } from "@/src/entities/cardFilm";
+import { CardFilm } from "@/src/entities/film";
 
 import { getCinema } from "@/src/shared/api";
 import { CinemaTodayProps } from "@/src/shared/types";
@@ -24,7 +24,7 @@ export const CardList = async (): Promise<JSX.Element> => {
               subtitle={originalName}
               genre={genres[0]}
               country={country.name}
-              releaseData={releaseDate}
+              releaseDate={releaseDate}
               key={id}
               ageRatingLetter={ageRating}
               imgSrc={img}

@@ -18,3 +18,8 @@ export interface CinemaTodayProps {
   success: boolean;
   films: FilmProps[];
 }
+
+export interface FilmDetailProps {
+  success: boolean;
+  film: FilmProps;
+}
