@@ -1,6 +1,7 @@
-import Image from "next/image";
 import Link from "next/link";
-import { StarList } from "./StarList";
+import { ImageWithDetail } from "@/src/shared/ui";
+import { Title } from "@/src/shared/ui";
+import { Rating } from "@/src/shared/ui";
 
 import { formattingFilmInfo } from "../lib/formattingFilmInfo";
 import { formattingAgeRating } from "../lib/formattingAgeRating";
@@ -34,33 +35,11 @@ export const CardFilm = ({
 
   return (
     <div className="flex w-[328px] flex-col gap-y-4 lg:w-[300px]">
-      <div className="relative h-[300px] w-full">
-        <Image
-          className="h-full w-full rounded-lg bg-slate-500"
-          src={`https://shift-backend.onrender.com${imgSrc}`}
-          width={606}
-          height={903}
-          alt="film image"
-          priority={true}
-        ></Image>
+      <ImageWithDetail filmInfo={filmInfo} genre={genre} imgSrc={imgSrc} />
 
-        <div className="absolute bottom-0 right-0 flex h-[48px] w-[110px] flex-col items-center justify-center rounded-br-lg rounded-tl-lg bg-bg-secondary">
-          <span className="text-2-primary-medium">{genre}</span>
-          <span className="text-2-primary-regular text-nowrap">{filmInfo}</span>
-        </div>
-      </div>
+      <Title title={title} ageRating={ageRating} subtitle={subtitle} />
 
-      <div>
-        <h3 className="overflow-hidden text-ellipsis text-nowrap">
-          {title} ({ageRating})
-        </h3>
-        <p className="text-2-tertiary-regular mt-1">{subtitle}</p>
-      </div>
-
-      <div>
-        <StarList countFilledStar={rating} />
-        <p className="text-2-tertiary-regular mt-1">Kinopoink - {userRating}</p>
-      </div>
+      <Rating countFilledStar={rating} userRating={userRating} />
 
       <Link
         href={`/film/${id}`}
