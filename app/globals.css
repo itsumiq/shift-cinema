@@ -20,6 +20,10 @@
     @apply text-[16px];
   }
 
+  .text-1-secondary-regular {
+    @apply text-1 text-text-secondary font-normal;
+  }
+
   .text-1-secondary-medium {
     @apply text-1  text-text-secondary font-medium;
   }

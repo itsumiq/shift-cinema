@@ -25,6 +25,7 @@ const config: Config = {
           primary: "#141C24",
           secondary: "#344051",
           tertiary: "#637083",
+          quartenery: "#97A1AF",
         },
       },
       screens: {
