@@ -23,3 +23,21 @@ export interface FilmDetailProps {
   success: boolean;
   film: FilmProps;
 }
+
+// film shedule
+
+export interface FilmSheduleProps {
+  success: boolean;
+  schedules: ShedulesProps[];
+}
+
+interface ShedulesProps {
+  date: string;
+  seances: SeancesProps[];
+}
+
+interface SeancesProps {
+  time: string;
+  hall: { name: string; places: { price: number; type: string }[][] };
+  payedTickets: [];
+}
