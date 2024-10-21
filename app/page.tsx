@@ -9,8 +9,10 @@ export const metadata: Metadata = {
 
 const Home = (): JSX.Element => {
   return (
-    <div className="mt-4 lg:mt-12">
-      <CardList />
+    <div className="mx-auto w-[91.1112vw] lg:w-[62.5vw] desktop:w-[66.667vw]">
+      <div className="mt-4 lg:mt-12">
+        <CardList />
+      </div>
     </div>
   );
 };
